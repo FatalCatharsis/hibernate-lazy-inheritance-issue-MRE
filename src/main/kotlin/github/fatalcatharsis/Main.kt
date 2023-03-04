@@ -64,6 +64,7 @@ fun main() {
     entityManagerFactory.createEntityManager().transaction {
         val newRef = ExtendedReference().apply {
             name = "asdf"
+            num = 6
         }
         val entity = Test().apply {
             ref = newRef

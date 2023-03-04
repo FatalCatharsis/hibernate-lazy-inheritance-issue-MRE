@@ -17,6 +17,7 @@ val jarTask = tasks.withType<Jar> {
 tasks.register<JavaExec>("runJar") {
     classpath = sourceSets.main.get().runtimeClasspath
     mainClass.set("github.fatalcatharsis.MainKt")
+    enableAssertions = true
     dependsOn(jarTask)
 }
 

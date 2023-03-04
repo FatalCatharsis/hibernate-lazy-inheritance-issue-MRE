@@ -4,5 +4,6 @@
         <class>github.fatalcatharsis.Test</class>
         <class>github.fatalcatharsis.TestLazy</class>
         <class>github.fatalcatharsis.Reference</class>
+        <class>github.fatalcatharsis.ExtendedReference</class>
     </persistence-unit>
 </persistence>
