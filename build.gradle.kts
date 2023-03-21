@@ -8,11 +8,7 @@ dependencies {
     implementation("org.hibernate:hibernate-core:6.1.7.Final")
 }
 
-val jarTask = tasks.withType<Jar> {
-    manifest {
-        attributes["Main-Class"] = "github.fatalcatharsis.MainKt"
-    }
-}
+val jarTask = tasks.withType<Jar>()
 
 tasks.register<JavaExec>("runJar") {
     classpath = sourceSets.main.get().runtimeClasspath

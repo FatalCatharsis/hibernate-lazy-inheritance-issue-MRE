@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
     <persistence-unit name="wyatt-test" transaction-type="RESOURCE_LOCAL">
-        <class>github.fatalcatharsis.Test</class>
+        <class>github.fatalcatharsis.TestEager</class>
         <class>github.fatalcatharsis.TestLazy</class>
         <class>github.fatalcatharsis.Reference</class>
         <class>github.fatalcatharsis.ExtendedReference</class>
+        <class>github.fatalcatharsis.TestNonPolyEager</class>
+        <class>github.fatalcatharsis.TestNonPolyLazy</class>
+        <class>github.fatalcatharsis.NonPolyReference</class>
     </persistence-unit>
 </persistence>
